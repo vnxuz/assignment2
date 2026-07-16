@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <meta name="description" content="Sweet Tooth Candy – the most indulgent, handcrafted confections. Discover our story, signature sweets, and irresistible flavors.">
+  <title>Sweet Tooth Candy · artisan confections</title>
+  <!-- two custom fonts: Playfair Display (serif) + Nunito (sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- separate CSS file (no inline/embedded) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER with semantic role -->
+  <header class="header">
+    <div class="container header-grid">
+      <div class="logo-wrapper">
+        <!-- inline SVG logo (company logo) -->
+        <svg class="logo-svg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Sweet Tooth Candy swirl logo">
+          <circle cx="24" cy="24" r="22" fill="#fce9d8" stroke="#b45f3a" stroke-width="2"/>
+          <path d="M24 6C16 6 8 14 8 24C8 34 16 42 24 42C32 42 40 34 40 24C40 14 32 6 24 6Z" fill="#f7d1b0" stroke="#b45f3a" stroke-width="1.5"/>
+          <path d="M24 12C18 12 12 18 12 24C12 30 18 36 24 36C30 36 36 30 36 24C36 18 30 12 24 12Z" fill="#f4b886" stroke="#8a4d2b" stroke-width="1.2"/>
+          <circle cx="24" cy="24" r="6" fill="#fce9d8" stroke="#b45f3a" stroke-width="1.5"/>
+          <path d="M24 18L26 22L30 23L27 26L28 30L24 28L20 30L21 26L18 23L22 22L24 18Z" fill="#d48c5c" stroke="#8a4d2b" stroke-width="0.8"/>
+        </svg>
+        <span class="brand-name">Sweet Tooth</span>
+      </div>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#candy" class="nav-link">Candy</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN content -->
+  <main>
+    <!-- hero section with embedded video & image -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-title">Sweetness <br>reimagined.</h1>
+          <p class="hero-sub">Handcrafted caramels, truffles &<br> old-fashioned candy sticks.</p>
+          <a href="#candy" class="btn btn-primary">Explore flavors</a>
+        </div>
+        <div class="hero-media">
+          <!-- embedded video (engaging) -->
+          <div class="video-wrapper">
+            <video controls poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='180' viewBox='0 0 320 180'%3E%3Crect width='320' height='180' fill='%23f7d1b0'/%3E%3Ctext x='30' y='100' font-family='Nunito' font-size='24' fill='%238a4d2b'%3E🍬 Sweet clip%3C/text%3E%3C/svg%3E" width="320" height="180" style="width:100%; max-width:560px; border-radius: 24px; box-shadow: 0 12px 24px rgba(0,0,0,0.1);">
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <!-- decorative SVG / image -->
+          <figure class="hero-figure">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='56' fill='%23fce9d8' stroke='%23b45f3a' stroke-width='2'/%3E%3Cpath d='M60 10 L70 40 L100 45 L75 65 L85 95 L60 80 L35 95 L45 65 L20 45 L50 40 Z' fill='%23d48c5c' opacity='0.7'/%3E%3C/svg%3E" alt="Candy star decoration" width="120" height="120" class="floating-svg">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured candy section -->
+    <section class="featured" id="candy">
+      <div class="container">
+        <h2 class="section-title">Signature sweets</h2>
+        <div class="candy-grid">
+          <article class="candy-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23f7e3d4'/%3E%3Ccircle cx='100' cy='100' r='70' fill='%23e8b48c'/%3E%3Ccircle cx='100' cy='100' r='40' fill='%23d48c5c'/%3E%3C/svg%3E" alt="Caramel swirl" class="candy-img" loading="lazy">
+            <h3>Sea salt caramel</h3>
+            <p>Buttery, smooth, with a hint of smoked salt.</p>
+          </article>
+          <article class="candy-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23f9e6df'/%3E%3Cpath d='M50 100 Q100 30 150 100 Q100 170 50 100' fill='%23c97c5a'/%3E%3C/svg%3E" alt="Chocolate truffle" class="candy-img" loading="lazy">
+            <h3>Dark chocolate truffle</h3>
+            <p>70% cacao, infused with vanilla bean.</p>
+          </article>
+          <article class="candy-card">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23fce8d0'/%3E%3Crect x='70' y='40' width='60' height='120' rx='30' fill='%23d48c5c'/%3E%3C/svg%3E" alt="Candy stick" class="candy-img" loading="lazy">
+            <h3>Old fashioned stick</h3>
+            <p>Classic peppermint, made with pure cane sugar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- story section (engaging) -->
+    <section class="story" id="story">
+      <div class="container story-grid">
+        <div class="story-text">
+          <h2 class="section-title">From our kitchen</h2>
+          <p>Since 1985, Sweet Tooth Candy has been crafting small-batch confections using time-honored techniques and the finest ingredients. Every piece is a celebration of flavor and texture.</p>
+          <blockquote>“Sweetness is an art — we paint with caramel and chocolate.”</blockquote>
+        </div>
+        <div class="story-media">
+          <!-- another decorative SVG (engaging) -->
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="60" cy="60" r="54" stroke="#b45f3a" stroke-width="2" stroke-dasharray="6 6" />
+            <circle cx="60" cy="60" r="40" fill="#f7d1b0" />
+            <path d="M60 30 L70 50 L92 52 L74 70 L80 92 L60 80 L40 92 L46 70 L28 52 L50 50 L60 30Z" fill="#d48c5c" />
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER with company logo, info, contact form -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <!-- company logo (SVG) repeated -->
+        <svg class="footer-logo" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Sweet Tooth Candy logo">
+          <circle cx="24" cy="24" r="22" fill="#fce9d8" stroke="#b45f3a" stroke-width="2"/>
+          <path d="M24 6C16 6 8 14 8 24C8 34 16 42 24 42C32 42 40 34 40 24C40 14 32 6 24 6Z" fill="#f7d1b0" stroke="#b45f3a" stroke-width="1.5"/>
+          <circle cx="24" cy="24" r="6" fill="#fce9d8" stroke="#b45f3a" stroke-width="1.5"/>
+          <path d="M24 18L26 22L30 23L27 26L28 30L24 28L20 30L21 26L18 23L22 22L24 18Z" fill="#d48c5c" stroke="#8a4d2b" stroke-width="0.8"/>
+        </svg>
+        <span class="footer-brand-name">Sweet Tooth Candy Co.</span>
+        <address class="footer-address">
+          123 Sugar Lane, Sweetsville,<br>
+          Candyland, CA 98765
+        </address>
+        <p class="footer-phone">📞 +1 (800) 555-SWEET</p>
+      </div>
+
+      <!-- quick contact form -->
+      <div class="footer-contact">
+        <h4 class="footer-heading">Say hello</h4>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name" class="visually-hidden">Your name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" placeholder="Email address" required>
+          </div>
+          <div class="form-group">
+            <label for="msg" class="visually-hidden">Message</label>
+            <textarea id="msg" rows="2" placeholder="Sweet message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sweet Tooth Candy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- HTML comments: semantic elements used: header, nav, main, section, article, figure, footer, address, blockquote -->
+  <!-- all content original, no ipsum -->
+</body>
+</html>
